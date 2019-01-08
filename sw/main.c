@@ -29,47 +29,7 @@
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 
-///*!
-// * CAYENNE_LPP is myDevices Application server.
-// */
-////#define CAYENNE_LPP
-//#define LPP_DATATYPE_DIGITAL_INPUT  0x0
-//#define LPP_DATATYPE_DIGITAL_OUTPUT 0x1
-//#define LPP_DATATYPE_HUMIDITY       0x68
-//#define LPP_DATATYPE_TEMPERATURE    0x67
-//#define LPP_DATATYPE_BAROMETER      0x73
-#define LPP_APP_PORT 99
 
-///*!
-// * Defines the application data transmission duty cycle. 5s, value in [ms].
-// */
-//#define APP_TX_DUTYCYCLE                            10000
-///*!
-// * LoRaWAN Adaptive Data Rate
-// * @note Please note that when ADR is enabled the end-device should be static
-// */
-//#define LORAWAN_ADR_STATE LORAWAN_ADR_ON
-///*!
-// * LoRaWAN Default data Rate Data Rate
-// * @note Please note that LORAWAN_DEFAULT_DATA_RATE is used only when ADR is disabled 
-// */
-//#define LORAWAN_DEFAULT_DATA_RATE DR_0
-///*!
-// * LoRaWAN application port
-// * @note do not use 224. It is reserved for certification
-// */
-//#define LORAWAN_APP_PORT                            2
-///*!
-// * LoRaWAN default endNode class port
-// */
-//#define LORAWAN_DEFAULT_CLASS                       CLASS_A
-///*!
-// * LoRaWAN default confirm state
-// */
-//#define LORAWAN_DEFAULT_CONFIRM_MSG_STATE           LORAWAN_UNCONFIRMED_MSG
-///*!
-// * User application data buffer size
-// */
 #define LORAWAN_APP_DATA_BUFF_SIZE                           64
 /*!
  * User application data
@@ -79,7 +39,6 @@ static uint8_t AppDataBuff[LORAWAN_APP_DATA_BUFF_SIZE];
 /*!
  * User application data structure
  */
-//static lora_AppData_t AppData={ AppDataBuff,  0 ,0 };
 lora_AppData_t AppData={ AppDataBuff,  0 ,0 };
 
 /* Private macro -------------------------------------------------------------*/

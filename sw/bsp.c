@@ -74,16 +74,13 @@ void BSP_LED_Toggle(void)
 
 
 
-
-
-
-
-
 void BSP_sensor_Read( sensor_t *sensor_data)
 {
+  
 }
 
 void  BSP_sensor_Init( void  )
 {
+  
 }
 

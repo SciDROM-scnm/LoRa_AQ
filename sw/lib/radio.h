@@ -26,7 +26,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "Commissioning.h"
+#include "config.h"
 
 /*!
  * Radio driver supported modems

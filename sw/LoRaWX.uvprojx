@@ -55,7 +55,7 @@
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>.\LoraDunchy\</ListingPath>
+          <ListingPath>.\LoRaWX\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -336,7 +336,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>STM32L072xx,USE_B_L072Z_LRWAN1,USE_HAL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\lib;.\hal;.\lib\region;..\src</IncludePath>
+              <IncludePath>.\lib;.\hal;.\hal\legacy;.\lib\region;..\sw;.\sensors</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -389,6 +389,11 @@
               <FileName>mlm32l0xx_hw_conf.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\mlm32l0xx_hw_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\config.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -729,6 +734,61 @@
               <FileName>mlm32l0xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>mlm32l0xx_it.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Sensors</GroupName>
+          <Files>
+            <File>
+              <FileName>BME280.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\BME280.c</FilePath>
+            </File>
+            <File>
+              <FileName>HPM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\HPM.c</FilePath>
+            </File>
+            <File>
+              <FileName>loradunchy_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\loradunchy_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>sensors.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\sensors.c</FilePath>
+            </File>
+            <File>
+              <FileName>sht31.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\sht31.c</FilePath>
+            </File>
+            <File>
+              <FileName>SI7013.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\SI7013.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC3100.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\STC3100.c</FilePath>
+            </File>
+            <File>
+              <FileName>TMP75.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\TMP75.c</FilePath>
+            </File>
+            <File>
+              <FileName>VEML6030.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\VEML6030.c</FilePath>
+            </File>
+            <File>
+              <FileName>VEML6075.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sensors\VEML6075.c</FilePath>
             </File>
           </Files>
         </Group>

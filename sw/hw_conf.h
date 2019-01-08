@@ -27,7 +27,7 @@
 
 /* Includes ------------------------------------------------------------------*/
    
-#include "Commissioning.h"
+#include "config.h"
 
 #ifdef USE_STM32F0XX_NUCLEO
   #include "stm32f0xx_hal.h"
